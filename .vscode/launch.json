@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "Application",
+      "type": "firefox",
+      "request": "launch",
+      "reAttach": true,
+      "url": "http://localhost:4200",
+      "sourceMaps": true,
+      "timeout": 10000,
+      "trace": "verbose",
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${workspaceFolder}/*"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<mat-toolbar color="primary" class="sticky">
+  <span>Angular Template</span>
+  <span class="spacer"></span>
+  <button mat-fab color="primary" [matMenuTriggerFor]="userMenu"><mat-icon>account_circle</mat-icon></button>
+</mat-toolbar>
+
+<mat-menu #userMenu="matMenu">
+  <button mat-menu-item (click)="logout()">Logout</button>
+</mat-menu>

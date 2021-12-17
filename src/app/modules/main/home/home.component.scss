@@ -1,0 +1,63 @@
+.main-content {
+  padding: 20px 10px;
+  display: flex;
+}
+
+.summary-card-wrapper {
+  margin: 0px 5px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+  .summary-card {
+    width: 180px;
+    height: 180px;
+
+
+  .summary-card-title {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .summary-card-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+
+    .summary-card-total {
+      padding: 10px;
+      font-size: 1.8rem;
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5px;
+    }
+
+    .summary-card-details {
+      display: -ms-grid;
+      display: grid;
+      grid-template: auto /auto 1fr;
+      grid-gap: 4px 7px;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+  }
+}
+}
+
+.system-toolbar {
+  display: flex;
+  box-sizing: border-box;
+  padding: 5px 16px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: #f8f8f8;
+}
+
+
+.mat-form-field-wrapper{
+   margin-bottom: -1.25em;
+}

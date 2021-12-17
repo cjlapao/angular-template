@@ -1,0 +1,63 @@
+.mat-input-element {
+  caret-color: #69f0ae;
+}
+
+.mat-accent .mat-slider-track-fill,
+.mat-accent .mat-slider-thumb,
+.mat-accent .mat-slider-thumb-label {
+  background-color: #69f0ae;
+}
+
+.mat-form-field {
+  &.input-id {
+    width: 300px;
+  }
+
+  &.input-xs{
+    width: 100px;
+  }
+
+  &.input-s {
+    width: 130px;
+  }
+
+  &.input-n {
+    width: 180px;
+  }
+
+  &.input-l {
+    width: 250px;
+  }
+
+  &.input-xl {
+    width: 300px;
+  }
+
+  &.input-xxl {
+    width: 350px;
+  }
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: #3f51b5;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #3f51b5;
+}
+
+.blue-snackbar {
+  background: #2196f3;
+}
+
+.success-snackbar {
+  background: #4caf50;
+}
+
+.error-snackbar {
+  background: #f44336;
+}
+
+.warn-snackbar {
+  background: #ff9800;
+}

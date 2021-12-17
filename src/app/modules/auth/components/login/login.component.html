@@ -1,0 +1,34 @@
+<app-alert></app-alert>
+<span *ngIf="loading" class="login-loader">
+  <app-loader background="primary" type="ellipses" [active]="loading"></app-loader>
+</span>
+<div class="global-container">
+  <div class="login-form-wrapper">
+    <form [formGroup]="loginForm" (ngSubmit)="login()" class="login-form">
+      <mat-card class="login-card">
+        <mat-card-title class="text-center login-card-title" >
+          <div><mat-icon>lock</mat-icon> </div>
+          <div>Sign in</div>
+        </mat-card-title>
+        <mat-card-content class="login-content">
+          <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input matInput #username type="text" formControlName="username" matTooltip="User Name" placeholder="Username" />
+            <mat-error *ngIf="loginForm.get('username')?.hasError('required')">You need to type username</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput #password type="password" formControlName="password" matTooltip="User Password" placeholder="Password" />
+            <mat-error *ngIf="loginForm.get('password')?.hasError('required')">You need to type a password</mat-error>
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions class="login-actions">
+          <button mat-raised-button type="submit" color="primary">Login</button>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </div>
+</div>
+<div class="login-footer">
+  copyright © Carlos Lapao, 2022
+</div>

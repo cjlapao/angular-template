@@ -1,0 +1,156 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/scss/main.scss";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+.table-content {
+  padding: 0px 10px;
+
+  .mat-table {
+    padding-top: 5px;
+    width: 100%;
+  }
+}
+
+.grid-details-row {
+  display: -ms-grid;
+  display: grid;
+  grid-template: auto/ 1fr;
+  grid-gap: 20px;
+  align-items: center;
+
+  &.middle {
+    grid-template: auto/auto auto;
+  }
+
+  &.two {
+    grid-template: auto/auto 1fr;
+  }
+
+  &.two-start {
+    grid-template: auto/1fr auto;
+  }
+
+  &.three {
+    grid-template: auto/auto auto  1fr;
+  }
+
+  &.three-start {
+    grid-template: auto/ 1fr auto auto;
+  }
+
+  &.three-even {
+    grid-template: auto/ auto auto auto;
+  }
+
+  &.four {
+    grid-template: auto/auto auto auto 1fr;
+  }
+
+  &.four-even {
+    grid-template: auto/ auto auto auto auto;
+  }
+
+  &.five {
+    grid-template: auto/auto auto auto auto 1fr;
+  }
+
+  &.five-even {
+    grid-template: auto/auto auto auto auto auto;
+  }
+
+  &.six {
+    grid-template: auto/auto auto auto auto auto 1fr;
+  }
+
+  &.six-even {
+    grid-template: auto/auto auto auto auto auto auto;
+  }
+
+  &.button {
+    grid-template: auto/1fr 36px;
+  }
+
+  &.two-and-button {
+    grid-template: auto/auto 1fr 36px;
+  }
+
+  &.two-and-button {
+    grid-template: auto/auto auto 1fr 36px;
+  }
+}
+
+.grid-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.global-container {
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+}
+
+
+// Tables
+table {
+  width: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+tr.detail-row {
+  height: 0 !important;
+}
+
+tr.element-row:not(.expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.element-row:not(.expanded-row):active {
+  background: #efefef;
+}
+
+tr.element-row {
+  &.expanded-row {
+    background: whitesmoke;
+  }
+}
+.element-row td {
+  border-bottom-width: 0;
+}
+
+.element-detail {
+  overflow: hidden;
+  display: flex;
+  font-size: 1rem;
+}
+
+.sub-table-content {
+  padding: 16px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+
+  .sub-table-row {
+    margin-bottom: 3px;
+    display: grid;
+    display: -ms-grid;
+
+    grid-template: auto / 180px 1fr;
+  }
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+

@@ -1,0 +1,12 @@
+// Material Theme import
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/theming";
+
+// Common Import
+@import "layout.scss";
+@import "status-bar.scss";
+@import "loader.scss";
+@import "material-overrides.scss";
+@import "tree.scss";
+@import "animations.scss";
+@import "theme.scss";

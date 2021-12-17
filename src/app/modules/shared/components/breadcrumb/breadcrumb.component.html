@@ -1,0 +1,13 @@
+<div class="system-toolbar" *ngIf="breadcrumbs.length > 0">
+  <div *ngFor="let breadcrumb of breadcrumbs; let i = index" class="breadcrumb-button">
+    <span *ngIf="i > 0">/</span>
+    <button mat-button color="primary" [routerLink]="breadcrumb.path" *ngIf="breadcrumb.path" >
+      <mat-icon *ngIf="breadcrumb.icon">{{breadcrumb.icon}}</mat-icon> {{ breadcrumb.name }}
+    </button>
+    <div *ngIf="!breadcrumb.path">
+      <button mat-button color="primary">
+      <mat-icon *ngIf="breadcrumb.icon" >{{breadcrumb.icon}}</mat-icon> {{ breadcrumb.name }}
+    </button>
+    </div>
+  </div>
+</div>

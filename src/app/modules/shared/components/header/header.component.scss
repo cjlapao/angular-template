@@ -1,0 +1,14 @@
+:host {
+  ::ng-deep .mat-fab {
+    height: 32px !important;
+    width: 32px !important;
+    font-size: 14px !important;
+    line-height: unset !important;
+  }
+
+  ::ng-deep .mat-button-wrapper {
+    padding: unset !important;
+    display: inline-block;
+    line-height: unset !important;
+  }
+}

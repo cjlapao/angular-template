@@ -39,8 +39,7 @@ export class LoginComponent implements OnInit {
       this.loading = true;
       let form = {
         user: this.loginForm.controls['username'].value,
-        password: this.loginForm.controls['password'].value,
-        tenantId: this.loginForm.controls['tenantId'].value,
+        password: this.loginForm.controls['password'].value
       };
       console.log(`Logging User ${form.user}`);
       this.accountSvc

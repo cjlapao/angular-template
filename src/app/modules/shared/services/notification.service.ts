@@ -1,15 +1,13 @@
-import { Injectable, OnInit } from '@angular/core';
-import { Observable, Subject, Subscription } from 'rxjs';
+import { Injectable } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import { ALERT_SERVICE } from '../../../constants/constants';
+import { ALERT_SERVICE, NOTIFICATION_SERVICE } from '../../../constants/constants';
 import { Message, MessageType } from '../models/message';
-
-export const NOTIFICATION_SERVICE = "NOTIFICATION_SERVICE"
 
 @Injectable({
   providedIn: 'root'
 })
-export class MessageService {
+export class NotificationService {
 
   notifications: Subject<Message>
 

@@ -1,4 +1,4 @@
-import { AuthorizationInterceptor } from './modules/auth/services/authorization.interceptor';
+import { JwtInterceptor } from './modules/auth/interceptors/jwt.interceptor';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -23,7 +23,7 @@ import { MainModule } from './modules/main/main.module';
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: AuthorizationInterceptor,
+      useClass: JwtInterceptor,
       multi: true
     }
   ],

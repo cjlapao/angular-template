@@ -1,4 +1,4 @@
-import { MessageService } from '../../services/message.service';
+import { NotificationService } from '../../services/notification.service';
 import { MessageType } from '../../models/message';
 import { Component, Input, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
@@ -22,7 +22,7 @@ export class AlertComponent implements OnInit {
   messageSubscription: Subscription | null;
 
   constructor(
-    private messageService: MessageService,
+    private messageService: NotificationService,
     private _snackBar: MatSnackBar
   ) {
     this.messageSubscription = null;

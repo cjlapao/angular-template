@@ -1,5 +1,5 @@
 import { Message, MessageType } from '../../../shared/models/message';
-import { MessageService } from '../../../shared/services/message.service';
+import { NotificationService } from '../../../shared/services/notification.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
     private accountSvc: AccountService,
     private router: Router,
     private route: ActivatedRoute,
-    private msgSvc: MessageService
+    private msgSvc: NotificationService
   ) {
     this.loginForm = this.fb.group({
       username: this.fb.control('', [Validators.required]),
